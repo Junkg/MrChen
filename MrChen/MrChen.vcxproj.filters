@@ -13,6 +13,18 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\控件">
+      <UniqueIdentifier>{70c2c99e-f22a-4576-bf1c-470b94c9ac3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\窗口">
+      <UniqueIdentifier>{0c7609bb-28ae-4349-8ca0-c0a7b7bc4a6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\运行">
+      <UniqueIdentifier>{1b773d73-78d7-4ad8-8bf9-53b2483c4eb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\配置">
+      <UniqueIdentifier>{5500c491-6eae-4357-b236-9e464972ec7f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MrChen.h">
@@ -33,50 +45,65 @@
     <ClInclude Include="MrChenView.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Resource.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="CWndMyComboBox.h">
+      <Filter>头文件\控件</Filter>
     </ClInclude>
-    <ClInclude Include="FileView.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="CWndMySelBox.h">
+      <Filter>头文件\控件</Filter>
     </ClInclude>
-    <ClInclude Include="ClassView.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="ViewTree.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="OutputWnd.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="PropertiesWnd.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="CWndEditor.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="CWndLog.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="CWndMyStatic.h">
+      <Filter>头文件\控件</Filter>
     </ClInclude>
     <ClInclude Include="CWndConfig.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="CWndLog.h">
+      <Filter>头文件\窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="CWndEditor.h">
+      <Filter>头文件\窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="FileView.h">
+      <Filter>头文件\窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputWnd.h">
+      <Filter>头文件\窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewTree.h">
+      <Filter>头文件\窗口</Filter>
     </ClInclude>
     <ClInclude Include="CWndMain.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\窗口</Filter>
     </ClInclude>
-    <ClInclude Include="CWndStatic.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="CMyDevice.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="ClassView.h">
+      <Filter>头文件\窗口</Filter>
     </ClInclude>
     <ClInclude Include="CMySocketClient.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\运行</Filter>
     </ClInclude>
-    <ClInclude Include="CMyComRTU.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="CMyDevice.h">
+      <Filter>头文件\运行</Filter>
     </ClInclude>
     <ClInclude Include="CMyCompletionPort.h">
-      <Filter>头文件</Filter>
+      <Filter>头文件\运行</Filter>
+    </ClInclude>
+    <ClInclude Include="CMyComRTU.h">
+      <Filter>头文件\运行</Filter>
+    </ClInclude>
+    <ClInclude Include="Param.h">
+      <Filter>头文件\配置</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesWnd.h">
+      <Filter>头文件\窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件\配置</Filter>
+    </ClInclude>
+    <ClInclude Include="CWndBase.h">
+      <Filter>头文件\窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="CWndCtrl.h">
+      <Filter>头文件\控件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -122,9 +149,6 @@
     <ClCompile Include="CWndMain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="CWndStatic.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="CMyDevice.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -135,6 +159,18 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="CMyCompletionPort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CWndMySelBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CWndMyComboBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CWndMyStatic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CWndBase.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

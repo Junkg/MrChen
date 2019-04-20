@@ -34,7 +34,7 @@ private:
 	CMyCompletionPort();
 	~CMyCompletionPort();
 	CMyCompletionPort(const CMyCompletionPort &);
-	CMyCompletionPort & operator= (const CMyCompletionPort &);
+	CMyCompletionPort & operator= (const CMyCompletionPort &) {};
 
 	static CMyCompletionPort * m_instance; 
 	void Init();

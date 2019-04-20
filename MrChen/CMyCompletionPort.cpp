@@ -11,9 +11,7 @@ CMyCompletionPort::CMyCompletionPort(const CMyCompletionPort &){
 
 }
 
-//CMyCompletionPort & CMyCompletionPort::operator=(const CMyCompletionPort & object){
-//	return (CMyCompletionPort)object;
-//}
+
 
 //在此初始化 
 CMyCompletionPort * CMyCompletionPort::m_instance = new CMyCompletionPort();

@@ -1,10 +1,10 @@
 #pragma once
-class CWndStatic : public CStatic 
+class CWndMyStatic : public CStatic 
 {
-	DECLARE_DYNAMIC(CWndStatic)
+	DECLARE_DYNAMIC(CWndMyStatic)
 public:
-	CWndStatic();
-	virtual ~CWndStatic();
+	CWndMyStatic();
+	virtual ~CWndMyStatic();
 
 protected:
 	DECLARE_MESSAGE_MAP()
@@ -16,7 +16,8 @@ public:
 	afx_msg HBRUSH CtlColor(CDC* /*pDC*/, UINT /*nCtlColor*/);
 	afx_msg void OnLButtonDown(UINT nFlags, CPoint point);
 private:
-	CFont  m_font; 
+	CString m_str;
+	static CFont  m_font; 
 	int  m_nfontSize;
 	BOOL m_bTran; //Í¸Ã÷Ä£Ê½
 	COLORREF m_crText;
