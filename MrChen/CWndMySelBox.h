@@ -11,9 +11,10 @@ public:
 	CWndMySelBox();
 	virtual ~CWndMySelBox();
 
-	virtual BOOL Create(LPCTSTR lpszWindName, byte & pNum, DWORD dwStyle, const RECT & rect, CWnd * pParentWnd, UINT nID, int nSelLen = 100, CCreateContext * pContext = NULL);
+	virtual BOOL Create(LPCTSTR lpszWindName, byte & pNum, DWORD dwStyle, const RECT & rect, CWnd * pParentWnd, UINT nID, int nSelLen = 120, CCreateContext * pContext = NULL);
 	
 	void InserItem(CString str, byte n);
+	void SetCurSel(byte n);
 	int  GetSelected();
 public:
 	

@@ -173,6 +173,9 @@
     <ClCompile Include="CWndBase.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Param.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="MrChen.rc">

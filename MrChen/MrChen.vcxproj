@@ -230,6 +230,7 @@
     <ClCompile Include="MrChenDoc.cpp" />
     <ClCompile Include="MrChenView.cpp" />
     <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="Param.cpp" />
     <ClCompile Include="PropertiesWnd.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

@@ -4,7 +4,8 @@
 #define  H_START 0 
 
 #include "MainFrm.h"
-
+#include "MrChenDoc.h"
+#include "MrChen.h"
 //´¿Ðé»ùÀà
 class CWndBase : public CWnd
 {

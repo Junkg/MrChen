@@ -43,9 +43,14 @@ int CWndMain::OnCreate(LPCREATESTRUCT lpCreateStruct)
 {
 	if (CWndBase::OnCreate(lpCreateStruct) == -1)
 		return -1;
-
+	//theDoc = (CMrChenDoc *)theFrame->GetActiveDocument();
 	byte by;
 
-	m_selTest.Create(_T("测试选择框"), by, WS_CHILD | WS_VISIBLE, CRect(300, 10, 520, 40), this, 0);
+	m_selTest.Create(_T("测试选择框"), by, WS_CHILD | WS_VISIBLE, CRect(0, 10, 520, 40), this, 0);
+	m_selTest.InserItem(_T("TCP 设备"), 0);
+	m_selTest.InserItem(_T("UDP 设备"), 1);
+	m_selTest.InserItem(_T("串口设备"), 2);
+	m_selTest.SetCurSel(0);
+
 	return 0;
 }

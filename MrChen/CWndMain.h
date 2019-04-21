@@ -1,7 +1,8 @@
 #pragma once
 
 #include "CWndBase.h"
-
+#include "MrChenDoc.h"
+#include "MainFrm.h"
 #include "CWndCtrl.h" 
 
 class CWndMain : public CWndBase

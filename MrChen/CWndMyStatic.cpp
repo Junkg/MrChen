@@ -27,8 +27,8 @@ CWndMyStatic::CWndMyStatic()
 			0, //指定角度旋转
 			0, //指定角度旋转
 			FW_NORMAL, //权重
-			TRUE,//斜体
-			TRUE, //下划现
+			FALSE,//斜体
+			FALSE, //下划线
 			0, //删除线
 			ANSI_CHARSET,              // nCharSet
 			OUT_DEFAULT_PRECIS,        // nOutPrecision 输出精度
@@ -36,9 +36,13 @@ CWndMyStatic::CWndMyStatic()
 			DEFAULT_QUALITY,           // nQuality 
 			DEFAULT_PITCH | FF_SWISS,  // nPitchAndFamily  间距和系列
 			_T("黑体"));
+		if (!bl)
+		{
+			DWORD dwErr = GetLastError();
+		}
+			
 
 	}
-	SetFont(&m_font);
 	
 }
 
@@ -96,8 +100,8 @@ int CWndMyStatic::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	// TODO:  在此添加您专用的创建代码
 
-
-	SetWindowText(m_str);
+	SetFont(&m_font);
+	//SetWindowText(m_str);
 	return 0;
 }
 

@@ -51,7 +51,8 @@ int CWndConfig::OnCreate(LPCREATESTRUCT lpCreateStruct)
 		return -1;
 
 	// TODO:  在此添加您专用的创建代码
-	byte nTy;
-	m_DeviType.Create(_T("设备类型"), nTy, WS_CHILD | WS_VISIBLE, CRect(0, 0, 100, 20), this, 0);
+	
+	/*m_DeviType.Create(_T("设备类型"), theApp.m_curDevi->nType.CMrChenApp, WS_CHILD | WS_VISIBLE,
+		CRect(0, 0, 100, 20), this, 0);*/
 	return 0;
 }
