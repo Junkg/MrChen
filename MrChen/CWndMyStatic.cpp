@@ -62,7 +62,7 @@ HBRUSH CWndMyStatic::CtlColor(CDC* pDC, UINT nCtlColor)
 		pDC->SelectObject(&m_font);
 		pDC->SetTextColor(m_crText);
 		pDC->SetBkColor(m_crBackColor);
-		if (m_bTran == true)
+		if (m_bTran == TRUE)
 			pDC->SetBkMode(TRANSPARENT);
 	}
 	return NULL;
@@ -83,6 +83,14 @@ void CWndMyStatic::SetTransparent(BOOL bTran)
 	m_bTran = bTran;
 }
 
+void CWndMyStatic::SetFont(CFont font)
+{
+	if (font.GetSafeHandle() != NULL)
+	{
+		CWnd::SetFont(&font);
+	}
+}
+
 
 BOOL CWndMyStatic::Create(LPCTSTR lpszText, DWORD dwStyle, const RECT& rect, CWnd* pParentWnd, UINT nID)
 {
@@ -100,7 +108,7 @@ int CWndMyStatic::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	// TODO:  在此添加您专用的创建代码
 
-	SetFont(&m_font);
+	
 	//SetWindowText(m_str);
 	return 0;
 }

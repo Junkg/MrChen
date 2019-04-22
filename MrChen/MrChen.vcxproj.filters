@@ -60,9 +60,6 @@
     <ClInclude Include="CWndLog.h">
       <Filter>头文件\窗口</Filter>
     </ClInclude>
-    <ClInclude Include="CWndEditor.h">
-      <Filter>头文件\窗口</Filter>
-    </ClInclude>
     <ClInclude Include="FileView.h">
       <Filter>头文件\窗口</Filter>
     </ClInclude>
@@ -103,6 +100,18 @@
       <Filter>头文件\窗口</Filter>
     </ClInclude>
     <ClInclude Include="CWndCtrl.h">
+      <Filter>头文件\控件</Filter>
+    </ClInclude>
+    <ClInclude Include="CWndEditor.h">
+      <Filter>头文件\窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="CWndMyEditCell.h">
+      <Filter>头文件\控件</Filter>
+    </ClInclude>
+    <ClInclude Include="CWndMyEdit.h">
+      <Filter>头文件\控件</Filter>
+    </ClInclude>
+    <ClInclude Include="CWndMyBtnCell.h">
       <Filter>头文件\控件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -174,6 +183,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Param.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CWndMyEditCell.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CWndMyEdit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CWndMyBtnCell.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

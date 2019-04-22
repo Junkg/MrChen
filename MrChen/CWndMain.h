@@ -22,8 +22,13 @@ protected:
 
 
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
-
+	afx_msg void OnMybuttonClk(UINT nID);
 private:
 	CWndMySelBox  m_selTest;
+	CWndMyEditCell m_editTest;
+	CWndMyBtnCell  m_btnTest;
+public:
+	afx_msg void OnPaint();
+
 };
 

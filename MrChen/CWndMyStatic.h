@@ -26,6 +26,7 @@ public :
 	void SetColor(COLORREF color);
 	void SetBKColor(COLORREF color);
 	void SetTransparent(BOOL bTran);
+	void SetFont(CFont font);
 	
 	
 };

@@ -194,7 +194,10 @@
     <ClInclude Include="CWndEditor.h" />
     <ClInclude Include="CWndLog.h" />
     <ClInclude Include="CWndMain.h" />
+    <ClInclude Include="CWndMyBtnCell.h" />
     <ClInclude Include="CWndMyComboBox.h" />
+    <ClInclude Include="CWndMyEdit.h" />
+    <ClInclude Include="CWndMyEditCell.h" />
     <ClInclude Include="CWndMySelBox.h" />
     <ClInclude Include="CWndMyStatic.h" />
     <ClInclude Include="FileView.h" />
@@ -221,7 +224,10 @@
     <ClCompile Include="CWndEditor.cpp" />
     <ClCompile Include="CWndLog.cpp" />
     <ClCompile Include="CWndMain.cpp" />
+    <ClCompile Include="CWndMyBtnCell.cpp" />
     <ClCompile Include="CWndMyComboBox.cpp" />
+    <ClCompile Include="CWndMyEdit.cpp" />
+    <ClCompile Include="CWndMyEditCell.cpp" />
     <ClCompile Include="CWndMySelBox.cpp" />
     <ClCompile Include="CWndMyStatic.cpp" />
     <ClCompile Include="FileView.cpp" />

@@ -18,6 +18,7 @@ protected:
 	DECLARE_MESSAGE_MAP()
 private:
 	CWndMySelBox  m_DeviType;//选择设备类型
+
 	
 public:
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);

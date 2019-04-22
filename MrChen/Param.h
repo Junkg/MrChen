@@ -14,7 +14,7 @@
 
 //自定义消息
 #define WM_SWITCH_VIEW						WM_USER+110
-
+#define WM_SIZE_CHANGE                      WM_USER+111
 
 //软件参数
 typedef struct _tParam {

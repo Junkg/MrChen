@@ -6,6 +6,7 @@
 #include "MainFrm.h"
 #include "MrChenDoc.h"
 #include "MrChen.h"
+
 //´¿Ðé»ùÀà
 class CWndBase : public CWnd
 {

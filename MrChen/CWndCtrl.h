@@ -6,6 +6,7 @@
 #include "CWndMyComboBox.h"
 #include "CWndMyStatic.h"
 #include "CWndMySelBox.h"
-
+#include "CWndMyEditCell.h"
+#include "CWndMyBtnCell.h"
 
 #endif
