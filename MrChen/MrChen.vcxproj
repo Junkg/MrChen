@@ -93,6 +93,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -107,6 +108,9 @@
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -183,11 +187,15 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="binary_log_types.h" />
+    <ClInclude Include="CFindFile.h" />
     <ClInclude Include="ClassView.h" />
     <ClInclude Include="CMyCompletionPort.h" />
     <ClInclude Include="CMyComRTU.h" />
     <ClInclude Include="CMyDevice.h" />
+    <ClInclude Include="CMyModBus.h" />
     <ClInclude Include="CMySocketClient.h" />
+    <ClInclude Include="CMysqlClient.h" />
     <ClInclude Include="CWndBase.h" />
     <ClInclude Include="CWndConfig.h" />
     <ClInclude Include="CWndCtrl.h" />
@@ -198,6 +206,8 @@
     <ClInclude Include="CWndMyComboBox.h" />
     <ClInclude Include="CWndMyEdit.h" />
     <ClInclude Include="CWndMyEditCell.h" />
+    <ClInclude Include="CWndMyListBox.h" />
+    <ClInclude Include="CWndMyListCell.h" />
     <ClInclude Include="CWndMySelBox.h" />
     <ClInclude Include="CWndMyStatic.h" />
     <ClInclude Include="FileView.h" />
@@ -205,20 +215,33 @@
     <ClInclude Include="MrChen.h" />
     <ClInclude Include="MrChenDoc.h" />
     <ClInclude Include="MrChenView.h" />
+    <ClInclude Include="mysql.h" />
+    <ClInclude Include="mysql_com.h" />
+    <ClInclude Include="mysql_time.h" />
+    <ClInclude Include="mysql_version.h" />
+    <ClInclude Include="my_alloc.h" />
+    <ClInclude Include="my_command.h" />
+    <ClInclude Include="my_list.h" />
     <ClInclude Include="OutputWnd.h" />
     <ClInclude Include="Param.h" />
+    <ClInclude Include="plugin_auth_common.h" />
     <ClInclude Include="PropertiesWnd.h" />
+    <ClInclude Include="psi_base.h" />
+    <ClInclude Include="psi_memory.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="ViewTree.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CFindFile.cpp" />
     <ClCompile Include="ClassView.cpp" />
     <ClCompile Include="CMyCompletionPort.cpp" />
     <ClCompile Include="CMyComRTU.cpp" />
     <ClCompile Include="CMyDevice.cpp" />
+    <ClCompile Include="CMyModBus.cpp" />
     <ClCompile Include="CMySocketClient.cpp" />
+    <ClCompile Include="CMysqlClient.cpp" />
     <ClCompile Include="CWndBase.cpp" />
     <ClCompile Include="CWndConfig.cpp" />
     <ClCompile Include="CWndEditor.cpp" />
@@ -228,6 +251,8 @@
     <ClCompile Include="CWndMyComboBox.cpp" />
     <ClCompile Include="CWndMyEdit.cpp" />
     <ClCompile Include="CWndMyEditCell.cpp" />
+    <ClCompile Include="CWndMyListBox.cpp" />
+    <ClCompile Include="CWndMyListCell.cpp" />
     <ClCompile Include="CWndMySelBox.cpp" />
     <ClCompile Include="CWndMyStatic.cpp" />
     <ClCompile Include="FileView.cpp" />

@@ -8,5 +8,5 @@
 #include "CWndMySelBox.h"
 #include "CWndMyEditCell.h"
 #include "CWndMyBtnCell.h"
-
+#include "CWndMyListBox.h"
 #endif

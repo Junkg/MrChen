@@ -11,9 +11,10 @@ protected:
 	
 public:
 	virtual BOOL Create(LPCTSTR lpszText, DWORD dwStyle, const RECT& rect, CWnd* pParentWnd, UINT nID = 0xffff);
+
 	afx_msg int OnCreate(LPCREATESTRUCT lpCreateStruct);
 
-	afx_msg HBRUSH CtlColor(CDC* /*pDC*/, UINT /*nCtlColor*/);
+//	afx_msg HBRUSH CtlColor(CDC* /*pDC*/, UINT /*nCtlColor*/);
 	afx_msg void OnLButtonDown(UINT nFlags, CPoint point);
 private:
 	CString m_str;

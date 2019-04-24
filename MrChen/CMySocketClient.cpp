@@ -64,3 +64,38 @@ BOOL CMySocketClient::PostConnect(const char * ipadr, int nport)
 
 	return TRUE;
 }
+
+CMyUDP::CMyUDP()
+{
+}
+
+CMyUDP::~CMyUDP()
+{
+}
+
+BOOL CMyUDP::InitSock()
+{
+	ASSERT(m_sock == INVALID_SOCKET);
+
+	m_sock = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
+	if (m_sock == INVALID_SOCKET)
+	{
+		return FALSE;
+	}
+
+	//投放到完成端口
+	return 0;
+}
+
+void CMyUDP::SendMsg(const char * szMsg,int len, const char * szip, int nPort)
+{
+	ASSERT(m_sock != INVALID_SOCKET);
+
+	SOCKADDR_IN  adr;
+	adr.sin_family = AF_INET;
+	adr.sin_port = htons(nPort);
+	inet_pton(AF_INET, szip, (PVOID)&adr);
+	int nSize = sizeof(SOCKADDR_IN);
+	sendto(m_sock, szMsg, len, 0, (sockaddr *)&adr, nSize);
+
+}

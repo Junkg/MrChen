@@ -28,5 +28,7 @@ private:
 	int      m_nEditBoxLen;
 	
 
+public:
+	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
 };
 

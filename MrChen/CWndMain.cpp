@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "CWndMain.h"
-
+#include "MrChenDoc.h"
+#include "MainFrm.h"
 IMPLEMENT_DYNAMIC(CWndMain, CWndBase)
 
 BEGIN_MESSAGE_MAP(CWndMain, CWndBase)
@@ -30,8 +31,8 @@ void CWndMain::ShowPane(bool bShow)
 		if (!IsWindow(m_hWnd))
 		{
 			CRect rect;
-			theFrame->GetClientRect(&rect);
-			Create(WS_CHILD | WS_VISIBLE | WS_CLIPCHILDREN, rect, theFrame->GetActiveView(), IDW_WND_MAIN);
+			theMainFrame->GetClientRect(&rect);
+			Create(WS_CHILD | WS_VISIBLE | WS_CLIPCHILDREN, rect, theMainFrame->GetActiveView(), IDW_WND_MAIN);
 		}
 
 	}
@@ -45,7 +46,7 @@ int CWndMain::OnCreate(LPCREATESTRUCT lpCreateStruct)
 {
 	if (CWndBase::OnCreate(lpCreateStruct) == -1)
 		return -1;
-	//theDoc = (CMrChenDoc *)theFrame->GetActiveDocument();
+	theDoc = (CMrChenDoc *)theMainFrame->GetActiveDocument();
 	byte by;
 
 	m_selTest.Create(_T("²âÊÔÑ¡Ôñ¿ò"), by, WS_CHILD | WS_VISIBLE, CRect(10, 10, 260, 40), this, 0);
@@ -83,3 +84,6 @@ void CWndMain::OnPaint()
 	CPaintDC dc(this); // device context for painting
 	
 }
+
+
+

@@ -9,6 +9,17 @@
 
 #define BUFSIZE    512 
 
+class CMyUDP {
+public:
+	CMyUDP();
+	virtual~ CMyUDP();
+	BOOL InitSock();
+	void  SendMsg(const char * szMsg,int len,const char * szip, int nPort);
+private:
+
+	SOCKET m_sock;  
+};
+
 
 //¿Í»§¶Ë  
 class CMySocketClient

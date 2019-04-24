@@ -31,5 +31,7 @@ private:
 	CString m_strText;
 	byte* m_pNum;
 	int m_nSelLen;
+public:
+	afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
 };
 

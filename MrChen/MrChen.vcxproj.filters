@@ -25,6 +25,15 @@
     <Filter Include="头文件\配置">
       <UniqueIdentifier>{5500c491-6eae-4357-b236-9e464972ec7f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\modbus">
+      <UniqueIdentifier>{4f3d1f85-0a95-43d5-82c5-a8afe45f6d23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\modbus">
+      <UniqueIdentifier>{b860a8eb-89fc-4517-9ea0-30e7a336734f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\mysql">
+      <UniqueIdentifier>{4562b301-a038-42c8-9aa0-3e819d848978}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MrChen.h">
@@ -114,6 +123,54 @@
     <ClInclude Include="CWndMyBtnCell.h">
       <Filter>头文件\控件</Filter>
     </ClInclude>
+    <ClInclude Include="CMyModBus.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql.h">
+      <Filter>头文件\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="CMysqlClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="my_alloc.h">
+      <Filter>头文件\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="my_list.h">
+      <Filter>头文件\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql_com.h">
+      <Filter>头文件\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql_time.h">
+      <Filter>头文件\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="mysql_version.h">
+      <Filter>头文件\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="binary_log_types.h">
+      <Filter>头文件\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="my_command.h">
+      <Filter>头文件\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="plugin_auth_common.h">
+      <Filter>头文件\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="psi_memory.h">
+      <Filter>头文件\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="psi_base.h">
+      <Filter>头文件\mysql</Filter>
+    </ClInclude>
+    <ClInclude Include="CFindFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CWndMyListBox.h">
+      <Filter>头文件\控件</Filter>
+    </ClInclude>
+    <ClInclude Include="CWndMyListCell.h">
+      <Filter>头文件\控件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MrChen.cpp">
@@ -192,6 +249,21 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="CWndMyBtnCell.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CMyModBus.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CMysqlClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CFindFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CWndMyListBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CWndMyListCell.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

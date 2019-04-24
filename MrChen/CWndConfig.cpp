@@ -30,7 +30,7 @@ void CWndConfig::ShowPane(bool bShow)
 		if (!IsWindow(m_hWnd)) //IsWindows(HWND) 确定 hWND 的窗口句柄是否关联了一个存在的窗口，没关联返回0
 		{
 
-			/*Create(WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS, CRect(S_START, H_START, 500, 700), theFrame->GetActiveView(),
+			/*Create(WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS, CRect(S_START, H_START, 500, 700), theMainFrame->GetActiveView(),
 				IDW_WND_CONFIG);*/
 			
 		}

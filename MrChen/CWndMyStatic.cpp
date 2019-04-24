@@ -7,7 +7,7 @@ IMPLEMENT_DYNAMIC(CWndMyStatic, CStatic)
 CFont  CWndMyStatic::m_font;
 BEGIN_MESSAGE_MAP(CWndMyStatic,CStatic)
 
-	ON_WM_CTLCOLOR_REFLECT()
+//	ON_WM_CTLCOLOR_REFLECT()
 	ON_WM_CREATE()
 	ON_WM_LBUTTONDOWN()
 END_MESSAGE_MAP()
@@ -52,21 +52,21 @@ CWndMyStatic::~CWndMyStatic()
 }
 
 
-HBRUSH CWndMyStatic::CtlColor(CDC* pDC, UINT nCtlColor)
-{
-	// TODO:  在此更改 DC 的任何特性
-
-	// TODO:  如果不应调用父级的处理程序，则返回非 null 画笔
-	if (CTLCOLOR_STATIC == nCtlColor)
-	{
-		pDC->SelectObject(&m_font);
-		pDC->SetTextColor(m_crText);
-		pDC->SetBkColor(m_crBackColor);
-		if (m_bTran == TRUE)
-			pDC->SetBkMode(TRANSPARENT);
-	}
-	return NULL;
-}
+//HBRUSH CWndMyStatic::CtlColor(CDC* pDC, UINT nCtlColor)
+//{
+//	// TODO:  在此更改 DC 的任何特性
+//
+//	// TODO:  如果不应调用父级的处理程序，则返回非 null 画笔
+//	//if (CTLCOLOR_STATIC == nCtlColor)
+//	{
+//		pDC->SelectObject(&m_font);
+//		pDC->SetTextColor(m_crText);
+//		pDC->SetBkColor(m_crBackColor);
+//		if (m_bTran == TRUE)
+//			pDC->SetBkMode(TRANSPARENT);
+//	}
+//	return NULL;
+//}
 
 void CWndMyStatic::SetColor(COLORREF color)
 {

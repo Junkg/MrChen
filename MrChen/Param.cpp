@@ -7,6 +7,7 @@
 _tParam::_tParam()
 {
 	m_VerNum = VER_CUR_NUM;
+	
 }
 
 _tDeviParam::_tDeviParam()
